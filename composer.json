@@ -1,0 +1,31 @@
+{
+    "name": "ashiful/upload",
+    "description": "Laravel Secure File Upload & Media Guard",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashiful",
+            "email": "helloashiful@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ashiful\\Upload\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ashiful\\Upload\\UploadServiceProvider"
+            ],
+            "aliases": {
+                "SecureUpload": "Ashiful\\Upload\\Facades\\SecureUpload"
+            }
+        }
+    }
+}
